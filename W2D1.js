@@ -107,3 +107,18 @@ const maximumNumber = function (numbers) {
 const reversString = function (string) {
   return string.split("").reverse().join("");
 };
+
+// Extra Task
+const allUsers = [
+  { username: "Jane", password: "123456" },
+  { username: "admin", password: "abc123" },
+];
+
+const createUser = function (username, password) {
+  if (username === "admin" && "Jane") {
+    console.log("That username not avaliable");
+  } else {
+    allUsers.push(username), allUsers.push(password);
+    console.log("registration successfully");
+  }
+};
