@@ -62,55 +62,48 @@ const addToArray = function (array, string) {
 };
 // second task
 const convertToString = function (array) {
-    
-    return array.join(' ')
-   
-  };
-
-  // third task
-
-  const updateOrCreate = function (array, value, index) {
-   if ( index <= array.length ) {
-       array [index]=value
-       return array;
-       
-   }else return 'there is no element to updated in this index'
-  };
-
-  // forth task
-
-  const sliceArray = function (array) {
-      let str = [ ] 
-      for ( let i = 0 ; i < array.length ; i++)
-      if (typeof array[i] === 'string'){
-          str.push(array[i])
-      } else
-      return str
-    
-  };
-  //fifth task ^^ advanced code ==>
-  const users = [
-    { username: "Jane", password: "123456" },
-    { username: "admin", password: "abc123" },
-  ];
-  
-  const login = function (username, password) {
-    if (username === 'Jane' && password === '123456' ||
-    username === 'admin' && password === 'abc123'){console.log('login successfuly');}
-    
-    else {console.log('login failed')};
-  }
-  // sixth task
-  const maximumNumber = function (numbers) {
-    
-    
-    return Math.max.apply(Math, numbers);
-  }
-  //seventh task
-  const reversString = function (string) {
-return string.split('').reverse().join('')
-
+  return array.join(" ");
 };
 
+// third task
 
-  
+const updateOrCreate = function (array, value, index) {
+  if (index <= array.length) {
+    array[index] = value;
+    return array;
+  } else return "there is no element to updated in this index";
+};
+
+// forth task
+
+const sliceArray = function (array) {
+  let str = [];
+  for (let i = 0; i < array.length; i++)
+    if (typeof array[i] === "string") {
+      str.push(array[i]);
+    } else return str;
+};
+//fifth task ^^ advanced code ==>
+const users = [
+  { username: "Jane", password: "123456" },
+  { username: "admin", password: "abc123" },
+];
+
+const login = function (username, password) {
+  if (
+    (username === "Jane" && password === "123456") ||
+    (username === "admin" && password === "abc123")
+  ) {
+    console.log("login successfuly");
+  } else {
+    console.log("login failed");
+  }
+};
+// sixth task
+const maximumNumber = function (numbers) {
+  return Math.max.apply(Math, numbers);
+};
+//seventh task
+const reversString = function (string) {
+  return string.split("").reverse().join("");
+};
